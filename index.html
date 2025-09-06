@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Semoga Sehat Selalu&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      cursor: pointer;
+      font-size: 2em;
+      padding: 20px;
+      border: 2px dashed #00bfff;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .container:active {
+      transform: scale(0.95);
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #008000;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;container&quot; onclick=&quot;showMessage()&quot;&gt;
+  siapapun yg klik ini semoga sehat selalu
+&lt;/div&gt;
+
+&lt;script&gt;
+  function showMessage() {
+    // Buat elemen div baru untuk pesan
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message';
+    messageDiv.innerText = 'siapapun yg klik ini semoga sehat selalu ?';
+
+    // Tambahkan elemen pesan ke body
+    document.body.appendChild(messageDiv);
+  }
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
